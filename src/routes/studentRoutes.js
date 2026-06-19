@@ -1,10 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-// Middleware
-const authMiddleware = require("../middlewares/authMiddleware");
+const authMiddleware = require("../middleware/authMiddleware");
 
-// Controllers
 const {
   getStudents,
   getStudent,
@@ -13,7 +11,6 @@ const {
   deleteStudent
 } = require("../controllers/studentController");
 
-// Routes (Protected)
 router.get("/", authMiddleware, getStudents);
 router.get("/:id", authMiddleware, getStudent);
 router.post("/", authMiddleware, createStudent);
