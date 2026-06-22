@@ -1,28 +1,29 @@
 {
   "name": "student-course-system-api",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000s\u0000t\u0000u\u0000d\u0000e\u0000n\u0000t\u0000-\u0000c\u0000o\u0000u\u0000r\u0000s\u0000e\u0000-\u0000s\u0000y\u0000s\u0000t\u0000e\u0000m\u0000-\u0000a\u0000p\u0000i\u0000\r\u0000 \u0000",
-  "homepage": "https://github.com/reamthimkulu2006-sudo/student-course-system-api#readme",
-  "bugs": {
-    "url": "https://github.com/reamthimkulu2006-sudo/student-course-system-api/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/reamthimkulu2006-sudo/student-course-system-api.git"
-  },
-  "license": "ISC",
-  "author": "ReaTheDev",
+  "description": "Student Course Management API",
+  "main": "src/server.js",
   "type": "commonjs",
-  "main": "server.js",
+  "author": "ReaTheDev",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"No tests configured yet\""
   },
   "dependencies": {
+    "axios": "^1.18.0",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.6.3"
+    "express-validator": "^7.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.1",
+    "morgan": "^1.11.0",
+    "react-router-dom": "^7.18.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
